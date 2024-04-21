@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+.container {
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.profile {
+  width: 32.7rem;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 2.4rem 0;
+  align-items: center;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.header p {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.description p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.links-list {
+  width: 27.9rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.links-list li a {
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: hsl(0, 0%, 20%);
+  text-align: center;
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+.links-list li a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
+
+.links-list li a:focus {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
+
+@media screen and (min-width: 375px) {
+  .profile {
+    width: 38.4rem;
+  }
+
+  .inner-container {
+    margin: 4rem 0;
+  }
+}
